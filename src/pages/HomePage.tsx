@@ -3,6 +3,11 @@ import { getAvailableAnimals, Animal, initializeStorage } from '../lib/storage';
 import AnimalCard from '../components/AnimalCard';
 import AnimalModal from '../components/AnimalModal';
 import { Filter } from 'lucide-react';
+import Intercom from '@intercom/messenger-js-sdk';
+
+Intercom({
+  app_id: 'la2b8pe2',
+});
 
 export default function HomePage() {
   const [animals, setAnimals] = useState<Animal[]>([]);
