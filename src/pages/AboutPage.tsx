@@ -1,4 +1,9 @@
 import { Heart, Users, Home, Award } from 'lucide-react';
+import Intercom from '@intercom/messenger-js-sdk';
+
+Intercom({
+  app_id: 'la2b8pe2',
+});
 
 export default function AboutPage() {
   return (
